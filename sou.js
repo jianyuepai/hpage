@@ -44,9 +44,11 @@ $(document).ready(function() {
 	$(".lg").click(function() {
 	    var dt = $(".lg").attr('data-s');
 	    if (dt == "bing") {
+			$("form").attr('action', 'https://www.baidu.com/s?ie=utf-8');
 	        $(".lg").attr('data-s', 'baidu');
 			$(".lg").attr('style','background: url(icon/baidu.svg) no-repeat center/cover;');
 	    } else {
+			$("form").attr('action', 'https://www.bing.com/');
 	        $(".lg").attr('data-s', 'bing');
 	        $(".lg").attr('style','background: url(icon/bing.svg) no-repeat center/cover;');
 	    }
